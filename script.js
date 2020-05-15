@@ -107,6 +107,10 @@ var tekenSpeler = function(x, y) {
  */
 var beweegVijand = function() {
     vijandY = vijandY + 5;
+
+    if (vijandY > 670) {
+        vijandY = 0;
+    }
 };
 
 
