@@ -10,7 +10,17 @@
    voeg er je eigen code aan toe.
  */
 
-
+/*
+GAME: dingetjes die vallen ontwijken
+STAPENPLAN:
+1. speler: poppetje (gezicht) tekenen
+2. speler beweegt naar links en rechts
+3. speler kan niet verder dan rand scherm
+4. vijand: steen tekenen
+5. steen laten vallen
+6. als steen beneden, nieuwe steen maken
+7. als steen raakt poppetje: game over
+*/
 
 
 /* ********************************************* */
