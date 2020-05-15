@@ -172,8 +172,12 @@ var checkSpelerGeraakt = function() {
  * @returns {boolean} true als het spel is afgelopen
  */
 var checkGameOver = function() {
-    
-  return false;
+    var resultaat = false;
+    if ( (abs(spelerX - vijandX)) < 75 // afstand op x as kleiner dan 25
+         && (vijandY > spelerY) ) { // vijand voorbij speler gevallen
+        resultaat = true; // botsing 
+        }
+    return resultaat;
 };
 
 
@@ -221,6 +225,9 @@ function draw() {
       if (checkGameOver()) {
         spelStatus = GAMEOVER;
       }
+      break;
+      case GAMEOVER:
+        text("Game Over", 600, 300);
       break;
   }
 }
