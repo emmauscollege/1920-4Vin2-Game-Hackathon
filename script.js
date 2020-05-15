@@ -15,7 +15,7 @@ GAME: dingetjes die vallen ontwijken
 STAPENPLAN:
 1. speler: poppetje (gezicht) tekenen => valentijn
 2. speler beweegt naar links en rechts => gee => GEREED
-3. speler kan niet verder dan rand scherm
+3. speler kan niet verder dan rand scherm => gee
 4. vijand: steen tekenen => steijn
 5. steen laten vallen
 6. als steen beneden, nieuwe steen maken
@@ -122,6 +122,15 @@ var beweegSpeler = function() {
   if (keyIsDown(RIGHT_ARROW)) {
     spelerX = spelerX + 5;
   }
+
+  if (spelerX < 100) {
+      spelerX = 100;
+  }
+
+  if (spelerX > (1280-100) ) {
+      spelerX = 1280-100;
+  }
+
 };
 
 
