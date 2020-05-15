@@ -38,7 +38,7 @@ var spelerY = 620; // y-positie van speler
 var kogelX = 0;    // x-positie van kogel
 var kogelY = 0;    // y-positie van kogel
 
-var vijandX = 0;   // x-positie van vijand
+var vijandX = 1280/2;   // x-positie van vijand
 var vijandY = 0;   // y-positie van vijand
 
 var score = 0; // aantal behaalde punten
@@ -68,7 +68,7 @@ var tekenVeld = function () {
  */
 var tekenVijand = function(x, y) {
    fill (50, 50, 50);
-   ellipse(vijandX, 100, 50, 50); 
+   ellipse(x, y, 50, 50); 
 
 };
 
@@ -106,7 +106,7 @@ var tekenSpeler = function(x, y) {
  * Updatet globale variabelen met positie van vijand of tegenspeler
  */
 var beweegVijand = function() {
-    
+    vijandY = vijandY + 5;
 };
 
 
