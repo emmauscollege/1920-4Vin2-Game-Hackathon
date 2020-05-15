@@ -13,10 +13,10 @@
 /*
 GAME: dingetjes die vallen ontwijken
 STAPENPLAN:
-1. speler: poppetje (gezicht) tekenen => valentijn
+1. speler: poppetje (gezicht) tekenen => valentijn => GEREED
 2. speler beweegt naar links en rechts => gee => GEREED
-3. speler kan niet verder dan rand scherm => gee
-4. vijand: steen tekenen => steijn
+3. speler kan niet verder dan rand scherm => gee => GEREED
+4. vijand: steen tekenen => steijn => GEREED
 5. steen laten vallen
 6. als steen beneden, nieuwe steen maken
 7. als steen raakt poppetje: game over
@@ -67,10 +67,10 @@ var tekenVeld = function () {
  * @param {number} y y-coördinaat
  */
 var tekenVijand = function(x, y) {
-    
+   fill (50, 50, 50);
+   ellipse(vijandX, 100, 50, 50); 
 
 };
-
 
 /**
  * Tekent de kogel of de bal
